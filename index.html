@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VLA - Tarea 1</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com/"></script>
+  <!-- Material Symbols -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+  <style>
+    /* Estilos para el rectángulo que enmarca los cuadros */
+    .frame {
+      border: 2px solid red; /* Borde rojo */
+      position: relative;
+      padding: 16px; /* Espacio para el borde */
+      box-sizing: border-box;
+    }
+    .icon {
+      font-family: 'Material Symbols Outlined';
+      font-size: 1.25rem; /* Tamaño del ícono */
+      color: white; /* Color del ícono */
+    }
+  </style>
+</head>
+<body class="bg-indigo-400 text-white">
+  <!-- Contenedor para centrar los cuadros -->
+  <div class="container mx-auto p-4">
+    <!-- Primer cuadro centrado -->
+    <div class="frame bg-white rounded-lg mb-8">
+      <div class="flex justify-center space-x-4">
+        <div class="bg-red-500 hover:bg-red-700 w-10 h-10 border-2 border-white rounded flex items-center justify-center">
+          <span class="icon">favorite</span> <!-- Ícono de corazón -->
+        </div>
+        <div class="bg-blue-500 hover:bg-blue-700 w-10 h-10 border-2 border-white rounded flex items-center justify-center">
+          <span class="icon">star</span> <!-- Ícono de estrella -->
+        </div>
+      </div>
+    </div>
+    
+    <!-- Segundo cuadro -->
+    <div class="frame bg-white rounded-lg mb-8">
+      <div class="flex justify-end space-x-4">
+        <div class="bg-green-500 hover:bg-green-700 w-10 h-10 border-2 border-white rounded flex items-center justify-center">
+          <span class="icon">check_circle</span> <!-- Ícono de check -->
+        </div>
+        <div class="bg-yellow-500 hover:bg-yellow-700 w-10 h-10 border-2 border-white rounded flex items-center justify-center">
+          <span class="icon">warning</span> <!-- Ícono de advertencia -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Tercer cuadro: Rojo encima del azul, pegado en la esquina inferior derecha -->
+    <div class="frame bg-white rounded-lg mb-8 relative h-32">
+      <div class="absolute bottom-0 right-0 flex flex-col-reverse space-y-4">
+        <div class="bg-purple-500 hover:bg-purple-700 w-10 h-10 border-2 border-white rounded flex items-center justify-center">
+          <span class="icon">chat</span> <!-- Ícono de chat -->
+        </div>
+        <div class="bg-teal-500 hover:bg-teal-700 w-10 h-10 border-2 border-white rounded flex items-center justify-center">
+          <span class="icon">notifications</span> <!-- Ícono de notificaciones -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Cuarto cuadro: Rojo encima del azul, pegado en la esquina superior derecha -->
+    <div class="frame bg-white rounded-lg mb-8 relative h-32">
+      <div class="absolute top-0 right-0 flex flex-col space-y-4">
+        <div class="bg-pink-500 hover:bg-pink-700 w-10 h-10 border-2 border-white rounded flex items-center justify-center">
+          <span class="icon">favorite</span> <!-- Ícono de corazón -->
+        </div>
+        <div class="bg-orange-500 hover:bg-orange-700 w-10 h-10 border-2 border-white rounded flex items-center justify-center">
+          <span class="icon">star</span> <!-- Ícono de estrella -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Quinta línea con dos cuadros -->
+    <div class="frame bg-white rounded-lg mb-8">
+      <div class="flex justify-end space-x-4">
+        <div class="bg-indigo-500 hover:bg-indigo-700 w-10 h-10 border-2 border-white rounded flex items-center justify-center">
+          <span class="icon">access_alarm</span> <!-- Ícono de reloj -->
+        </div>
+        <div class="bg-gray-500 hover:bg-gray-700 w-10 h-10 border-2 border-white rounded flex items-center justify-center">
+          <span class="icon">calendar_today</span> <!-- Ícono de calendario -->
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
